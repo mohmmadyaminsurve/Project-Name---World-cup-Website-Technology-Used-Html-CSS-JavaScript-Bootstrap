@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="Loaders.css">
+
+  <script src="Loader script.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+
+  html{
+    scroll-behavior: scroll;
+  }
+
+    body{
+      background-color: gainsboro;
+    }
+
+    #clockdiv{
+	
+  border: 2px solid #880E4F;
+	color: #880E4F;
+	font-weight: bolder;
+	text-align: center;
+	border-radius: 12px;
+  background-color: antiquewhite;
+  box-shadow: 4px 4px 2px 2px;
+   
+}
+#clockdiv > div{
+	padding: 10px;
+	display: inline-block;
+}
+
+
+
+smalltext{
+	padding-top: 5px;
+	font-size: 3px;
+} /* Ending here */
+
+.text{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.mt{
+
+}
+
+input[type=password]{
+   border: none;
+   outline: none;
+   border-bottom: 2px solid gainsboro;
+   color: #C51162;
+}
+
+input[type=password]:hover{
+   border-bottom: 2px solid #C51162;
+   color: #C51162;
+  
+}
+
+
+
+input:active, input:focus, input:hover{
+  outline: 0px !important;
+}
+  
+
+input[type=email]{
+   border: none;
+   outline: none;
+   border-bottom: 2px solid gainsboro;
+   color: #C51162;
+}
+
+input[type=email]:hover{
+   border-bottom: 2px solid #C51162;
+   color: #C51162;
+  
+}
+  </style>
+</head>
+<body onload="myFunction()" style="margin: 0;">
+
+<div id="loader"></div>
+
+<div style="display: none;" id="website" class="animate-bottom">
+
+  <center>
+    <nav class="navbar navbar-expand-lg" style="background-color: #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6);">
+  
+      <div class="container-fluid">
+        
+      <a class="navbar-brand" href="#"><img src="logo.png" style="height: 70px; width: auto;box-shadow: 1 3px 10px rgb(0 0 0/ 0.2);"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar" style="background-color: white;"></span>
+          <span class="toggler-icon middle-bar" style="background-color: white;"></span>
+          <span class="toggler-icon bottom-bar" style="background-color: white;"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#News">News Hub</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#staduim">Stadiums</a>
+            </li>
+  
+            
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="true">
+                 More
+              </a>
+              <ul class="dropdown-menu mx-auto" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#example1" href="#">Log In</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              
+                 <button class="btn btn-outline-light" type="submit">Search</button>
+              
+          </form>
+        </div>
+      </div>
+    </nav>
+  </center>
+    
+  
+  <div class="conatainer">
+    <div class="card" style="background-color: gainsboro;">
+    <div class="row">
+      <div class="col-md-4 img-fluid ms-auto">
+         <img src="logo2.png" style="filter: drop-shadow(4px 2px 2px #C51162);">
+      </div>
+      <div class="col-md-5 mx-auto  mt-auto mb-auto">
+        <div id="clockdiv" >
+                  
+                  
+          <div class="mx-auto" style="font-size: 26px; font-family: Felix Titling;"> Count Down to Qatar World Cup</div>
+          <br>
+            <div>
+              <span class="days" id="day" style="font-size: 40px; font-weight: bold; font-family: Algerian;"></span>
+              <div class="smalltext" style="font-family: Calibri Light (Headings);">Days</div>
+            </div>
+            <div>
+              <span class="hours" id="hour" style="font-size: 40px; font-weight: bold; font-family: Algerian;"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes" id="minute" style="font-size: 40px; font-weight: bold; font-family: Algerian;"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds" id="second" style="font-size: 40px; font-weight: bold; font-family: Algerian;"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+      </div>
+        <p id="demo"></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+<div id="staduim">
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Al-Bayt-Stadium.webp" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Al Al-Bayt-Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> Host of the opening Match of the fiffa world cup Qatar 2022</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 60000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Al Khor city 35km North of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Lusail-Stadium.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Lusail Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> Host of the  fiffa world cup Qatar 2022 final match</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 80000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Lusail City 20km North of  Central Dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Ahmad-Bin-Ali-Stadium.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Ahmad Bin Ali Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> Where desert stories unfold</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Umm Al Afaei, 25km west of central dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Al-Janoub-Stadium.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Al Janoub Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> See football into era </p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Al wakrah 22km east of central of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Al-Thumama-Stadium.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Al Thumama Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> Avenue made for culture and tradition </p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Al wakrah 22km east of central of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Education-City-Stadium.webp" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Education City Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> A jewl for inspiration </p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Al Rayyan 13km north-west of central of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Khalifa-International-Stadium.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Khalifa International Stadium</h2>
+          <p style="text-align: center; color:#880E4F;"> A sporting legend remade  </p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> Aspire 5km west of central of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="conatainer mt-4 mx-auto" style="border: 3px solid #880E4F; box-shadow: 0 3px 10px rgb(0 0 0/ 0.6); width: 90%;">
+    <div class="card" style="background-color: navajowhite;">
+    <div class="row">
+      <div class="col-md-4">
+         <img src="Stadium-974.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 class="card-title mt-3" style="color: #880E4F; text-align: center; font-weight: bolder; font-family: Colonna MT;font-size: 50px;"> Stadium 974</h2>
+          <p style="text-align: center; color:#880E4F;"> Innovation of the herat of it all </p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <p style="text-align: center; color:#880E4F;"> capacity 40,000 &nbsp;<img src="loaction.svg" style=" fill: #880E4F; height: 14px;"> ras abu 10km east of central of dhoa</p>
+           <hr  style="width: 50%; margin: auto;">
+           <br>
+           <br>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!---->
+<hr>
+<br>
+
+<div id="News">
+<div class="row row-cols-1 row-cols-md-3 g-4 mx-auto w-75">
+  <div class="col">
+    <div class="card" style="border: 2px solid #880E4F;color: #880E4F; background-color: antiquewhite;box-shadow: 0 3px 10px rgb(0 0 0/ 0.6);">
+      <img src="news1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"> 6 October 2022</p>
+        <h3 class="card-title" style="font-weight: bolder; font-family: Colonna MT;">International Hayya Card holders can now invite three non-ticketed fans to attend Qatar 2022</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card" style="border: 2px solid #880E4F;color: #880E4F; background-color: antiquewhite;box-shadow: 0 3px 10px rgb(0 0 0/ 0.6);">
+      <img src="new2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">3 October 2022</p>
+        <h3 class="card-title" style="font-weight: bolder; font-family: Colonna MT;">Lusail-Stadium: The jewel in Qatar FIFA World Cup crown</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card" style="border: 2px solid #880E4F;color: #880E4F; background-color: antiquewhite;box-shadow: 0 3px 10px rgb(0 0 0/ 0.6);">
+      <img src="news3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">29 september 2022</p>
+        <h3 class="card-title" style="font-weight: bolder; font-family: Colonna MT;" >COVID-19 Travel & Return Policy for international fans attending this year FIFA World Cup</h3>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!---->
+
+<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: white;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-auto">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+             <input type="password" class="form-control shadow-none" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+           <input type="checkbox" class="form-check-input" id="exampleCheck1"> 
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger ms-auto" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-outline-primary me-auto">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<!---->
+<footer class="bg-dark text-center text-white" style="box-shadow:2px 4px 100px black;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fa fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fa fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fa fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+    </section>
+    <br>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+</div>
+
+  
+  <script>
+
+    var deadline = new Date("Nov 20, 2022 19:00:00").getTime();
+    
+    var x = setInterval(function() {
+    
+    var now = new Date().getTime();
+    var t = deadline - now;
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    document.getElementById("day").innerHTML =days ;
+    document.getElementById("hour").innerHTML =hours;
+    document.getElementById("minute").innerHTML = minutes;
+    document.getElementById("second").innerHTML =seconds;
+    if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "TIME UP";
+            document.getElementById("day").innerHTML ='0';
+            document.getElementById("hour").innerHTML ='0';
+            document.getElementById("minute").innerHTML ='0' ;
+            document.getElementById("second").innerHTML = '0'; }
+    }, 1000);
+    </script>
+</body>
+</html>
